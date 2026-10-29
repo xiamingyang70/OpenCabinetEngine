@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "opencabinet": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "opencabinet.mcp_server"],
+      "cwd": "OpenCabinetEngine/src"
+    }
+  }
+}
