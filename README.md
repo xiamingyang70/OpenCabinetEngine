@@ -35,6 +35,8 @@ never a broken model.
 
 3. Restart FreeCAD.
 
+> Backed by [opencabinet](https://github.com/xiamingyang70/opencabinet) engine **v0.2.0** — now with cut-list (BOM) generation, stock utilisation and oversize checks.
+
 Works with FreeCAD 1.x. No Python setup needed — the solver is vendored inside.
 
 ## Use
