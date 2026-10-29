@@ -2,8 +2,8 @@
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
   <name>OpenCabinetEngine</name>
   <description>Structurally verified wardrobe generation inside FreeCAD. Simplified task-panel inputs (width/height/depth/bays/per-bay function); column widths are solved automatically so door seams land exactly on partition centers; the opencabinet deterministic solver enforces hard gates (zero interference, closed dimension chains) before any board is created, and back-panel grooves are cut into the solids.</description>
-  <version>0.1.0</version>
-  <date>2026-10-17</date>
+  <version>0.1.1</version>
+  <date>2026-10-29</date>
   <maintainer email="24783995@qq.com">mingyang</maintainer>
   <license file="LICENSE">MIT</license>
   <url type="repository" branch="main">https://github.com/xiamingyang70/OpenCabinetEngine</url>
