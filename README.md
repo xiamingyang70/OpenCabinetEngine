@@ -73,6 +73,28 @@ panel inputs ──> spec_builder.v1 ──> opencabinet solver ──> board_gr
 - `src/opencabinet/oc_build.py` — board graph → FreeCAD solids
 - `src/opencabinet/` — vendored solver (solver / groover / contract / verify)
 
+## Talk to it with AI (MCP)
+
+The vendored solver ships a minimal **MCP stdio server** — any MCP-capable AI
+app (Claude Desktop, Claude Code, Cline, …) can generate verified wardrobes
+conversationally:
+
+```bash
+claude mcp add opencabinet -- python -m opencabinet.mcp_server
+```
+
+Exposed tools:
+
+- **`solve_wardrobe`** — solve a wardrobe spec (JSON) into a verified board
+  graph; returns the hard-gate report (interference, dimension chains) and
+  where the files were written.
+- **`validate_spec`** — cheap spec lint (bay-width closure, structural
+  fields) without solving.
+
+Pair it with the FreeCAD addon or the
+[`opencabinet` CLI](https://github.com/xiamingyang70/opencabinet) to turn the
+board graph into solids / DWG.
+
 ## License
 
 MIT — same as [opencabinet](https://github.com/xiamingyang70/opencabinet).
